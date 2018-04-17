@@ -29,7 +29,6 @@ setTimeout(() => subscribe(observer)(src), 2000);
 This source is equivalent to the sources below:
 
 ```js
-
 const create = require('callbag-create');
 const { fromIter, map, pipe } = require('callbag-basics');
 

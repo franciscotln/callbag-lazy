@@ -13,6 +13,6 @@ const readme = path.join(__dirname, '../readme.md');
 const data = fs.readFileSync(readme, 'utf-8');
 const updated = data.replace(
   /<span class="weight">(.*?)<\/span>/,
-  `<span class="weight">${gzipSize.sync(minified)} bytes</span>`
+  `<span class="weight">${gzipSize.sync(minified)}</span>`
 )
 fs.writeFileSync(readme, updated)

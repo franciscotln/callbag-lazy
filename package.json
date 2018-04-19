@@ -3,7 +3,10 @@
   "description": "Callbag source for lazy evaluation",
   "dependencies": {},
   "devDependencies": {
-    "tape": "~4.9.0"
+    "gzip-size": "^4.1.0",
+    "husky": "^0.14.3",
+    "tape": "~4.9.0",
+    "uglify-es": "^3.3.9"
   },
   "keywords": [
     "callbag"
@@ -16,7 +19,8 @@
     "url": "git+https://github.com/franciscotln/callbag-lazy.git"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test.js",
+    "precommit": "node scripts/update-readme.js"
   },
   "version": "1.0.1"
 }

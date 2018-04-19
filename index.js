@@ -1,5 +1,9 @@
 const lazy = f => (start, sink) => {
-  if (start === 0) [() => {}, f(), void 0].forEach((d, t) => sink(t, d));
+  if (start === 0) {
+    sink(0, () => {});
+    sink(1, f());
+    sink(2);
+  }
 };
 
 module.exports = lazy;

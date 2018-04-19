@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "tape test.js",
-    "precommit": "node scripts/update-readme.js"
+    "precommit": "node scripts/update-readme.js && git add readme.md"
   },
   "version": "1.0.1"
 }

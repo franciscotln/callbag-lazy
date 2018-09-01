@@ -1,5 +1,5 @@
 const test = require('tape');
-const lazy = require('./index');
+const lazy = require('.');
 
 test('it creates a source with a single lazyly evaluated value then completes', t => {
   t.plan(8);

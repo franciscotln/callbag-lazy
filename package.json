@@ -5,6 +5,7 @@
   "devDependencies": {
     "gzip-size": "^4.1.0",
     "husky": "^0.14.3",
+    "rollup": "^0.63.5",
     "tape": "~4.9.0",
     "uglify-es": "^3.3.9"
   },
@@ -12,15 +13,19 @@
     "callbag"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
   "name": "callbag-lazy",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/franciscotln/callbag-lazy.git"
   },
   "scripts": {
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
     "test": "tape test.js",
-    "precommit": "node scripts/update-readme.js && git add readme.md"
+    "precommit": "node scripts/update-readme.js && git add readme.md",
+    "prepare": "npm test"
   },
   "version": "1.0.2"
 }

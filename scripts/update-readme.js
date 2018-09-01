@@ -2,8 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const { minify } = require('uglify-es');
 const gzipSize = require('gzip-size');
+const pkg = require('../package.json');
 
-const main = require.resolve(path.join(__dirname, '..'));
+const main = require.resolve(path.join(__dirname, '..', pkg.module));
 const { code: minified } = minify(
   fs.readFileSync(main, 'utf-8'),
   { toplevel: true }

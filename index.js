@@ -6,4 +6,4 @@ const lazy = f => (start, sink) => {
   }
 };
 
-module.exports = lazy;
+export default lazy;

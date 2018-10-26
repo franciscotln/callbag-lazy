@@ -27,5 +27,5 @@
     "precommit": "node scripts/update-readme.js && git add readme.md",
     "prepare": "npm test"
   },
-  "version": "1.0.3"
+  "version": "2.0.0"
 }

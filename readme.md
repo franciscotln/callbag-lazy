@@ -1,7 +1,7 @@
 # callbag-lazy
 
 Callbag source for lazy evaluation at subscription time.
-Weighs <span class="weight">77</span> bytes (minified & gzipped).
+Weighs <span class="weight">98</span> bytes (minified & gzipped).
 
 `npm install callbag-lazy`
 

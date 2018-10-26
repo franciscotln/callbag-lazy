@@ -1,8 +1,11 @@
 const lazy = f => (start, sink) => {
   if (start === 0) {
-    sink(0, () => {});
+    let unsubed = false;
+    sink(0, type => {
+      if (type === 2) unsubed = true;
+    });
     sink(1, f());
-    sink(2);
+    if (!unsubed) sink(2);
   }
 };
 

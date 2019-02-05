@@ -1,7 +1,9 @@
 {
   "author": "Francisco Tavares de Lima Neto",
   "description": "Callbag source for lazy evaluation",
-  "dependencies": {},
+  "dependencies": {
+    "callbag": "^1.1.0"
+  },
   "devDependencies": {
     "gzip-size": "^4.1.0",
     "husky": "^0.14.3",

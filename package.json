@@ -2,17 +2,22 @@
   "author": "Francisco Tavares de Lima Neto",
   "description": "Callbag source for lazy evaluation",
   "dependencies": {
-    "callbag": "^1.1.0"
+    "callbag": "1.2.0"
   },
   "devDependencies": {
-    "gzip-size": "^4.1.0",
-    "husky": "^0.14.3",
-    "rollup": "^0.63.5",
-    "tape": "~4.9.0",
-    "uglify-es": "^3.3.9"
+    "husky": "4.2.5",
+    "gzip-size": "5.1.1",
+    "rollup": "2.10.5",
+    "tape": "5.0.0",
+    "uglify-es": "3.3.9"
   },
   "keywords": [
     "callbag"
+  ],
+  "files": [
+    "index.cjs.js",
+    "index.js",
+    "index.d.ts"
   ],
   "license": "MIT",
   "main": "index.cjs.js",
